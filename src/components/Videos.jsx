@@ -6,30 +6,43 @@ export default function Videos() {
   return (
     <div className={classes.videos}>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
       <Link to="/quiz">
-        <Video />
-      </Link>
-      <Link to="/quiz">
+        {" "}
+        {/* Corrected route path */}
         <Video />
       </Link>
     </div>
