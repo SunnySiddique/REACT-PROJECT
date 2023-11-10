@@ -1,28 +1,28 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// Import necessary modules
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { AuthProvider } from "../context/AuthContext";
-import "../styles/App.css";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 import Signup from "./pages/Signup";
-
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <AuthProvider>
         <Layout>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/signup" element={<Signup />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/quiz" element={<Quiz />} />
-            <Route exact path="/result" element={<Result />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/quiz/:id" element={<Quiz />} />
+            <Route path="/result/:id" element={<Result />} />
           </Routes>
         </Layout>
       </AuthProvider>
-    </BrowserRouter>
+    </Router>
   );
 }
 

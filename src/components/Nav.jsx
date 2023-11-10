@@ -1,7 +1,7 @@
-import Account from "./Account";
-import classes from "../styles/Nav.module.css";
-import logo from "../assets/image/S logo.avif";
 import { Link } from "react-router-dom";
+import logo from "../assets/Untitled design.png";
+import classes from "../styles/Nav.module.css";
+import Account from "./Account";
 
 export default function Nav() {
   return (
